@@ -1,0 +1,25 @@
+.contacto {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center; }
+  .contacto h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px; }
+  .contacto .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px; }
+    .contacto .container a {
+      color: white;
+      text-decoration: none;
+      background-color: darkred;
+      padding: 30px 70px;
+      font-size: 20px;
+      -webkit-box-shadow: 1px 1px 39px -4px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 1px 1px 39px -4px rgba(0, 0, 0, 0.75);
+      box-shadow: 1px 1px 39px -4px rgba(0, 0, 0, 0.75); }
+      .contacto .container a:hover {
+        background-color: red;
+        transition: 0.3s ease; }

@@ -1,0 +1,102 @@
+@import "vars";
+
+.sobre-mi {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+    @media screen and (min-width: 2560px) {
+        max-width: 2000px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+            color: white;
+            font-size: 60px;
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: unset;
+
+            @media screen and (min-width: 2560px) {
+                font-size: 80px;
+            }
+
+            @media screen and (max-width:768px) {
+                font-size: 55px;
+                margin-left: 20px;
+            }
+
+            @media screen and (max-width: 426px) {
+                font-size: 35px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                margin-left: 20px;
+            }
+        }
+
+        p {
+            color: rgb(163, 163, 163);
+            width: 55%;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin: unset;
+
+            @media screen and (min-width: 2560px) {
+                font-size: 40px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                margin-left: 20px;
+            }
+
+            @media screen and (max-width:768px) {
+                margin-left: 20px;
+                margin-top: -15px;
+                width: 22rem;
+            }
+
+            @media screen and (max-width: 376px) {
+                width: 90%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            background-color: $primaryColor;
+            padding: 15px 50px;
+            border: unset;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+            width: fit-content;
+
+            @media screen and (min-width: 2560px) {
+                font-size: 30px;
+                padding: 30px 40px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                margin-left: 20px;
+            }
+
+            @media screen and (max-width:768px) {
+                margin-left: 20px;
+            }
+
+            &:hover {
+                background-color: transparent;
+                border: 2px solid $primaryColor;
+                color: $primaryColor;
+                transition: 0.6s ease;
+            }
+        }
+    }
+}
